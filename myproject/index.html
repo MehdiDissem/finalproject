@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html" class="logo"> <img src="assets/img/Gankerz.png" alt="Logo_page" title="Accueil" id="logo"/></a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="presentation.html">Presentation</a>
+	<a href="contact.html">Contact</a>
+    
+  </div>
+</div>
+
+
+<video autoplay muted loop id="myVideo">
+  <source src="assets/video/video1.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+  <h1>COMING SOON !</h1>
+  <p>A Tunisian Gaming website, that has everything you need to show yourself in the battlefield.</p>
+  <button id="myBtn" onclick="playVid()" type="button">Play Video</button>
+  <button id="myBtn" onclick="pauseVid()" type="button">Pause Video</button>
+  <button id="myBtn" onclick="disbleMute()" type="button">SOUND ON</button> 
+  <button id="myBtn" onclick="enableMute()" type="button">SOUND OFF</button>   
+</div>
+
+<script> 
+  var vid = document.getElementById("myVideo"); 
+  function playVid() { 
+    vid.play(); 
+  } 
+  
+  function pauseVid() { 
+    vid.pause(); 
+  } 
+  
+  function enableMute() {
+    vid.muted = true;
+  }
+
+  function disbleMute() {
+    vid.muted = false;
+  }
+  </script> 
+  
+</body>
+
+<script src="js/script.js"></script>
+<script src="css/style.css"></script>
+</html>
